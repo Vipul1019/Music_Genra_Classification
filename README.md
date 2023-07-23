@@ -75,4 +75,14 @@ Yamnet : One specific use of YAMNet is as a high-level feature extractor - the 1
 
 
 
+![Picture1](https://github.com/Vipul1019/Music_Genra_Classification/assets/77145832/ba82e2e1-ae67-4887-9786-e6fa5daf11fe) 
+
+Element aij in the matrix refers to the number of test instances of class that the model predicted as class j. Diagonal elements aii corresponds to the correct predictions.
+
+
+<img width="705" alt="image" src="https://github.com/Vipul1019/Music_Genra_Classification/assets/77145832/24cdf481-52ff-45bb-a606-b7954db091b1">
+
+
+
+
 
