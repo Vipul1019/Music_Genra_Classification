@@ -63,4 +63,16 @@ Several CNNs with general configuration are trained and fine-tuned to classify a
 Output of a 10 fully connected layer is saved for each song. This outputs used as feature vector in similarity calculations.
 
 
+![OIP (3)](https://github.com/Vipul1019/Music_Genra_Classification/assets/77145832/2128c830-4360-4c1f-a6e6-0afdcc3b8b65)
+
+
+# Why Yamnet?
+
+Resnet18 : it uses the weights of pre-trained ImageNet. it would not allow the vanishing gradient problem to occur. But here the loss and accuracy remains constant after several epochs.
+
+
+Yamnet : One specific use of YAMNet is as a high-level feature extractor - the 1,024-dimensional embedding output. You will use the base (YAMNet) model's input features and feed them into your shallower model consisting of one hidden (tf.keras.layers.Dense) layer. Then, you will train the network on a small amount of data. Here the loss decreases and accuracy increases as the epochs are increased. 
+
+
+
 
