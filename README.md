@@ -4,6 +4,9 @@
 
 When compared to image processing and other classification approaches, audio processing is one of the most difficult problems in data science. One such application is music genre classification, which seeks to categorise audio recordings into specific sound genres to which they belong. The application is critical and requires automation to decrease manual error and time since manually classifying music involves listening to each file for the whole duration. So, to automate the process, we employ machine learning and deep learning algorithms, which we will demonstrate in this post.
 
+![OIP (2)](https://github.com/Vipul1019/Music_Genra_Classification/assets/77145832/49190cf4-9a7c-4f09-a749-664695cded89)
+
+
 In brief, we may express our project issue statement as "given multiple audio files, and the task is to categorise each audio file in a specific category, such as audio belongs to Disco, hip-hop, etc". The top four most commonly used methodologies for music genre classification are shown below:
 
 
@@ -35,4 +38,29 @@ The GTZAN genre collection dataset, which is a popular audio collecting dataset,
 Link:"https://www.kaggle.com/datasets/andradaolteanu/gtzan-dataset-music-genre-classification?select=Data"
 
 We have considered 80% of the dataset as training size and 20% of the dataset as testing size.
+
+
+# Methodology
+
+1. Read the audio files.
+
+2. Convert the audio files(wav files) to spectrogram in image 
+   format.
+
+3. Normalize all the shape of waveforms to one size.
+
+4. Extract features using YAMNet(CNN) architecture.
+
+5. Classify the audio into particular genre.
+
+
+# Model
+
+We have used "Yamnet" model for our music genra classification model.
+Normally CNN are used to classify images but one dimensional filters can be utilized to classify audio. 
+Also two dimensional filters can be used in the CNNs with spectrograms of audio.
+Several CNNs with general configuration are trained and fine-tuned to classify a set of songs. 
+Output of a 10 fully connected layer is saved for each song. This outputs used as feature vector in similarity calculations.
+
+
 
